@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name flabbergast)(type KiCad)(uri /Users/ryan/code/flabbergast/flabbergast.pretty)(options "")(descr ""))
+  (lib (name stm32_qfp64_breakout)(type KiCad)(uri ${KIPRJMOD}/stm32_qfp64_breakout.pretty)(options "")(descr ""))
 )
