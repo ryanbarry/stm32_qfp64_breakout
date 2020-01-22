@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name flabbergast)(type Legacy)(uri /Users/ryan/code/flabbergast/flabbergast.lib)(options "")(descr ""))
+  (lib (name stm32_qfp64_breakout)(type Legacy)(uri ${KIPRJMOD}/stm32_qfp64_breakout.lib)(options "")(descr ""))
 )

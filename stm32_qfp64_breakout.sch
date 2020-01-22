@@ -91,7 +91,7 @@ U 1 1 5E216707
 P 3890 1950
 F 0 "C1" H 3775 1904 50  0000 R CNN
 F 1 "2.2µF" H 4010 2040 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3928 1800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3928 1800 50  0001 C CNN
 F 3 "~" H 3890 1950 50  0001 C CNN
 	1    3890 1950
 	-1   0    0    1   
@@ -102,7 +102,7 @@ U 1 1 5E217C71
 P 4200 2050
 F 0 "C2" H 4315 2096 50  0000 L CNN
 F 1 "2.2µF" H 4315 2005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4238 1900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4238 1900 50  0001 C CNN
 F 3 "~" H 4200 2050 50  0001 C CNN
 	1    4200 2050
 	1    0    0    -1  
@@ -856,6 +856,10 @@ Text GLabel 6100 4400 2    50   Output ~ 0
 PB13
 NoConn ~ 5100 1200
 Wire Wire Line
+	1900 4100 1800 4100
+Wire Wire Line
+	1900 4200 1800 4200
+Wire Wire Line
 	1900 4300 1800 4300
 Wire Wire Line
 	1900 4400 1800 4400
@@ -863,26 +867,18 @@ Wire Wire Line
 	1900 4500 1800 4500
 Wire Wire Line
 	1900 4600 1800 4600
-Wire Wire Line
-	1900 4700 1800 4700
-Wire Wire Line
-	1900 4800 1800 4800
-Text GLabel 1800 4300 0    50   Output ~ 0
+Text GLabel 1800 4100 0    50   Output ~ 0
 PC0
-Text GLabel 1800 4400 0    50   Output ~ 0
+Text GLabel 1800 4200 0    50   Output ~ 0
 PC1
-Text GLabel 1800 4500 0    50   Output ~ 0
+Text GLabel 1800 4300 0    50   Output ~ 0
 PC2
-Text GLabel 1800 4600 0    50   Output ~ 0
+Text GLabel 1800 4400 0    50   Output ~ 0
 PC3
-Text GLabel 1800 5500 0    50   Output ~ 0
+Text GLabel 1800 5300 0    50   Output ~ 0
 PC4
-Text GLabel 1800 5600 0    50   Output ~ 0
+Text GLabel 1800 5400 0    50   Output ~ 0
 PC5
-Wire Wire Line
-	1800 5600 1900 5600
-Wire Wire Line
-	1800 5500 1900 5500
 Wire Wire Line
 	1800 5400 1900 5400
 Wire Wire Line
@@ -895,47 +891,51 @@ Wire Wire Line
 	1800 5000 1900 5000
 Wire Wire Line
 	1800 4900 1900 4900
-Text GLabel 1800 4700 0    50   Output ~ 0
+Wire Wire Line
+	1800 4800 1900 4800
+Wire Wire Line
+	1800 4700 1900 4700
+Text GLabel 1800 4500 0    50   Output ~ 0
 PA0
-Text GLabel 1800 4800 0    50   Output ~ 0
+Text GLabel 1800 4600 0    50   Output ~ 0
 PA1
-Text GLabel 1800 4900 0    50   Output ~ 0
+Text GLabel 1800 4700 0    50   Output ~ 0
 PA2
-Text GLabel 1800 5000 0    50   Output ~ 0
+Text GLabel 1800 4800 0    50   Output ~ 0
 PA3
-Text GLabel 1800 5100 0    50   Output ~ 0
+Text GLabel 1800 4900 0    50   Output ~ 0
 PA4
-Text GLabel 1800 5200 0    50   Output ~ 0
+Text GLabel 1800 5000 0    50   Output ~ 0
 PA5
-Text GLabel 1800 5300 0    50   Output ~ 0
+Text GLabel 1800 5100 0    50   Output ~ 0
 PA6
-Text GLabel 1800 5400 0    50   Output ~ 0
+Text GLabel 1800 5200 0    50   Output ~ 0
 PA7
 Wire Wire Line
-	1800 5800 1900 5800
+	1800 5600 1900 5600
 Wire Wire Line
-	1800 5700 1900 5700
-Text GLabel 1800 5700 0    50   Output ~ 0
+	1800 5500 1900 5500
+Text GLabel 1800 5500 0    50   Output ~ 0
 PB0
 Wire Wire Line
-	1800 6100 1900 6100
+	1800 5900 1900 5900
 Wire Wire Line
-	1800 6000 1900 6000
-Text GLabel 1800 6000 0    50   Output ~ 0
+	1800 5800 1900 5800
+Text GLabel 1800 5800 0    50   Output ~ 0
 PB10
-Text GLabel 1800 6100 0    50   Output ~ 0
+Text GLabel 1800 5900 0    50   Output ~ 0
 PB11
 Wire Wire Line
+	1900 3800 1800 3800
+Wire Wire Line
+	1900 3900 1800 3900
+Wire Wire Line
 	1900 4000 1800 4000
-Wire Wire Line
-	1900 4100 1800 4100
-Wire Wire Line
-	1900 4200 1800 4200
-Text GLabel 1800 4000 0    50   Output ~ 0
+Text GLabel 1800 3800 0    50   Output ~ 0
 PC13
-Text GLabel 1800 4100 0    50   Output ~ 0
+Text GLabel 1800 3900 0    50   Output ~ 0
 PC14
-Text GLabel 1800 4200 0    50   Output ~ 0
+Text GLabel 1800 4000 0    50   Output ~ 0
 PC15
 Wire Wire Line
 	3100 5200 3000 5200
@@ -1086,7 +1086,7 @@ Connection ~ 8240 1200
 Wire Wire Line
 	8240 1200 8580 1200
 Connection ~ 8580 1200
-Text GLabel 1800 5800 0    50   Output ~ 0
+Text GLabel 1800 5600 0    50   Output ~ 0
 PB1
 Wire Wire Line
 	7400 1200 7540 1200
@@ -1106,10 +1106,10 @@ Text GLabel 6100 3800 2    50   Output ~ 0
 B7(BOOT)
 Text GLabel 6100 3300 2    50   Output ~ 0
 PB2
-Text GLabel 1800 5900 0    50   Output ~ 0
+Text GLabel 1800 5700 0    50   Output ~ 0
 PB2
 Wire Wire Line
-	1800 5900 1900 5900
+	1800 5700 1900 5700
 Text GLabel 3100 3900 2    50   Output ~ 0
 PB8
 Text GLabel 3100 3800 2    50   Output ~ 0
@@ -1137,14 +1137,14 @@ Text GLabel 3730 6670 2    50   Output ~ 0
 SWDIO
 Text GLabel 3730 6570 2    50   Output ~ 0
 SWCLK
-Text GLabel 1800 3800 0    50   Output ~ 0
+Text GLabel 1800 6000 0    50   Output ~ 0
 GND
-Text GLabel 1800 3900 0    50   Output ~ 0
+Text GLabel 1800 6100 0    50   Output ~ 0
 VDD
 Wire Wire Line
-	1900 3900 1800 3900
+	1900 6100 1800 6100
 Wire Wire Line
-	1900 3800 1800 3800
+	1900 6000 1800 6000
 Wire Wire Line
 	3640 6570 3730 6570
 Wire Wire Line
@@ -1155,4 +1155,100 @@ Wire Wire Line
 	10000 1400 10300 1400
 Wire Wire Line
 	2800 1700 3100 1700
+Wire Wire Line
+	8300 4750 8200 4750
+Wire Wire Line
+	8300 4850 8200 4850
+Wire Wire Line
+	8300 4950 8200 4950
+Wire Wire Line
+	8300 5550 8200 5550
+Wire Wire Line
+	8300 5050 8200 5050
+Wire Wire Line
+	8300 4550 8200 4550
+Wire Wire Line
+	8300 4650 8200 4650
+Text GLabel 8200 4750 0    50   Output ~ 0
+PC10
+Text GLabel 8200 4850 0    50   Output ~ 0
+PC11
+Text GLabel 8200 5550 0    50   Output ~ 0
+VDD
+Text GLabel 8200 5050 0    50   Output ~ 0
+PC12
+Text GLabel 8200 4550 0    50   Output ~ 0
+PC8
+Text GLabel 8200 4650 0    50   Output ~ 0
+PC9
+Text GLabel 8200 4950 0    50   Output ~ 0
+PD2
+Text GLabel 8200 5650 0    50   Output ~ 0
+GND
+Wire Wire Line
+	8300 5650 8200 5650
+Text GLabel 9400 5600 2    50   Output ~ 0
+GND
+Wire Wire Line
+	9300 5600 9400 5600
+Wire Wire Line
+	8300 5350 8200 5350
+$Comp
+L stm32_qfp64_breakout:104031-0811 J6
+U 1 1 5EFB2915
+P 8800 5100
+F 0 "J6" H 8800 5867 50  0000 C CNN
+F 1 "Micro_SD_Card" H 8800 5776 50  0000 C CNN
+F 2 "stm32_qfp64_breakout:MOLEX_104031-0811" H 9950 5400 50  0001 C CNN
+F 3 "" H 8800 5100 50  0001 C CNN
+	1    8800 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 5250 8200 5250
+Text GLabel 8200 5250 0    50   Output ~ 0
+GND
+Text GLabel 8200 5350 0    50   Output ~ 0
+PB6
+$Comp
+L Device:LED D1
+U 1 1 5F30A693
+P 6800 5550
+F 0 "D1" V 6747 5628 50  0000 L CNN
+F 1 "LED" V 6838 5628 50  0000 L CNN
+F 2 "flabbergast:LED-0603" H 6800 5550 50  0001 C CNN
+F 3 "~" H 6800 5550 50  0001 C CNN
+	1    6800 5550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 5700 6800 5800
+$Comp
+L power:GND #PWR01
+U 1 1 5F354908
+P 6800 5800
+F 0 "#PWR01" H 6800 5550 50  0001 C CNN
+F 1 "GND" H 6805 5627 50  0000 C CNN
+F 2 "" H 6800 5800 50  0001 C CNN
+F 3 "" H 6800 5800 50  0001 C CNN
+	1    6800 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 5400 6800 5300
+$Comp
+L Device:R R2
+U 1 1 5F365C36
+P 6650 5300
+F 0 "R2" V 6443 5300 50  0000 C CNN
+F 1 "1kΩ" V 6534 5300 50  0000 C CNN
+F 2 "flabbergast:0603" V 6580 5300 50  0001 C CNN
+F 3 "~" H 6650 5300 50  0001 C CNN
+	1    6650 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 5300 6400 5300
+Text GLabel 6400 5300 0    50   Output ~ 0
+PC13
 $EndSCHEMATC
